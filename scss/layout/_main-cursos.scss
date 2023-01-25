@@ -1,0 +1,29 @@
+.cajaCursos{
+    @include grid (center, none, 1fr 1fr 1fr);
+    
+    div{
+        background-color: $bg-curos;
+        margin: 15px;
+        @include flex (column, start, center);
+        h1{
+            font-family: $font-general;
+            font-size: 25px;
+            padding: 10px;
+        }
+        ul{
+            text-decoration: none;
+        }
+        li{
+            font-family: $font-txt;
+            font-size: 15px;
+            padding: 10px;
+            
+        }
+        .listaCurso{
+            padding-left: 15px;
+        }
+        .subLista{
+            padding-left: 30px;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.error404{
+    @include flex (column, center, center);
+    padding: 25px;
+    p{
+        font-size: 45px;
+        font-family: $font-ppal;
+    }
+}

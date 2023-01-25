@@ -1,0 +1,33 @@
+.piedepagina{
+    background-color: $gb-footer;
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 25px;
+    .seguinos{
+        font-family: $font-general;
+        font-size: 24px;
+        padding: 10px;
+    }
+    .redes{
+        display: inline;
+        padding-left: 40px;
+        padding-bottom: 15px;
+        a{
+            margin: 10px;
+        }
+        .imgfb:hover{
+            background-color: blue;
+            border-radius: 50%;
+        }
+        .imgwpp:hover{
+            background-color: limegreen;
+            border-radius: 50%;
+        }
+        .imgig:hover{
+            background-color: red;
+            border-radius: 50%;
+        }
+    }
+}

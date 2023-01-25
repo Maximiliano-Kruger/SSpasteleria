@@ -1,0 +1,11 @@
+.main-contactos{
+    @include grid (center, center, 1fr 1fr);
+    div{
+        margin: 20px;
+        font-family: $font-general;
+        font-size: 15px;
+        p{
+            padding: 10px;
+        }
+    }
+}

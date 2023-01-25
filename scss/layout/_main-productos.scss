@@ -1,0 +1,19 @@
+.cajota{
+    @include grid (center, center, 1fr 1fr 1fr);
+    margin: 50px;
+    div{
+    padding: 15px;
+    @include flex (column, center, center);
+    p{
+        font-size: 25px;
+        font-family: $font-txt;
+    }
+    .prodName{
+        align-self: center;
+    }
+    .prodImg{
+        align-self: center;
+        margin: 5px;
+    }
+    }
+}

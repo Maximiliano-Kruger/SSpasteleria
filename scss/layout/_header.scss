@@ -1,0 +1,58 @@
+.header{
+    display: flex;
+    background-color: $bg-header;
+    justify-content: space-between;
+    margin: 10px;
+    width: 100%;
+    .icono1{
+        margin: 15px;
+        .imagen1 img{
+            border-radius: 50%;
+        }
+    }
+    .titulo1{
+        font-family: $font-ppal;
+        font-size: 72px;
+        padding-left: 15px;
+        align-self: center;
+    }
+    .slogan{
+        font-family: $font-slogan;
+        font-size: 30px;
+        padding: 10px;
+        align-self: end;
+    }
+    .navBar{
+        align-self: end;
+        margin: 15px;
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: space-between;
+            
+            li{
+                display: inline-block;
+                padding: 5px 10px;
+                font-size: 12px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                color: #fff;
+                background-color: #5c4e39;
+                margin: 1.5px;
+                border-radius: 5px;
+            }
+            li a{
+                color: #fff;
+            }
+            li a:hover{
+                padding: 5px 10px;
+                background-color: #b1d2db;
+                border-radius: 5px;
+            }
+        }
+        
+    }
+}

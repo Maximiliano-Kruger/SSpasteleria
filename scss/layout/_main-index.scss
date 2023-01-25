@@ -1,0 +1,68 @@
+.main-index{
+    background-color: $bg-main;
+    display: grid;
+    grid-template-columns: repeat(2, .5fr);
+    grid-template-rows: repeat(2, 1fr);
+    .pprincipal{
+        grid-column: 1/1;
+        grid-row: 1/2;
+        background-color: rgba(87, 221, 245, 0.753);
+        border: 2px rgb(40, 80, 87);
+        border-radius: 5% 25%;
+        align-self: center;
+        padding: 25px;
+        width: 200%;
+        margin: 25px;
+        font-family: $font-general;
+        font-size: 25px;
+    }
+    .box1Ind{
+        grid-column: 1/1;
+        grid-row: 2/2;
+        font-family: $font-general;
+        font-size: 15px;
+        margin: 12px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .box11Ind{
+        justify-self: center;
+        width: 100%;
+        padding: 25px;
+        p{
+            font-size: 25px;
+        }
+    }
+    .box12Ind{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        .p1{
+            align-self: flex-start;
+            padding: 10px;
+            font-size: 15px;
+        }
+        .p2{
+            align-self: flex-end;
+            padding: 10px;
+        }
+    }
+    .box2Ind{
+        grid-column: 2/2;
+        grid-row: 2/2;
+        font-family: $font-general;
+        font-size: 20px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        .box21Ind{
+            font-size: 25px;
+            padding: 25px;
+        }
+        .box22Ind{
+            align-self: center;
+        }
+    }
+}
