@@ -1,8 +1,9 @@
 .cajaCursos{
+    background-color: $bg-main;
     @include grid (center, none, 1fr 1fr 1fr);
     
     div{
-        background-color: $bg-curos;
+        background-color: $bg-head-tablet;
         margin: 15px;
         @include flex (column, start, center);
         h1{

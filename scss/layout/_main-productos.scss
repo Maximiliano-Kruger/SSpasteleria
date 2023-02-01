@@ -1,6 +1,7 @@
 .cajota{
+    background-color: $bg-main;
     @include grid (center, center, 1fr 1fr 1fr);
-    margin: 50px;
+    padding: 50px;
     div{
     padding: 15px;
     @include flex (column, center, center);

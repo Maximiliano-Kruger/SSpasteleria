@@ -7,9 +7,9 @@
 
 .header {
   display: flex;
-  background-color: #F79FBe;
+  background-color: #E095C3;
   justify-content: space-between;
-  margin: 10px;
+  padding: 10px;
   width: 100%;
 }
 .header .icono1 {
@@ -49,7 +49,7 @@
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #5c4e39;
+  background-color: #99173C;
   margin: 1.5px;
   border-radius: 5px;
 }
@@ -97,7 +97,7 @@
 }
 
 .main-index {
-  background-color: aliceblue;
+  background-color: #FFEAE8;
   display: grid;
   grid-template-columns: repeat(2, 0.5fr);
   grid-template-rows: repeat(2, 1fr);
@@ -105,8 +105,8 @@
 .main-index .pprincipal {
   grid-column: 1/1;
   grid-row: 1/2;
-  background-color: rgba(87, 221, 245, 0.753);
-  border: 2px rgb(40, 80, 87);
+  background-color: #CD7794;
+  border: 2px #8f5468;
   border-radius: 5% 25%;
   align-self: center;
   padding: 25px;
@@ -165,6 +165,7 @@
 }
 
 .main-contactos {
+  background-color: #FFEAE8;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -175,18 +176,25 @@
   font-family: "Noto Sans", sans-serif;
   font-size: 15px;
 }
+.main-contactos div h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  padding-left: 60px;
+}
 .main-contactos div p {
   padding: 10px;
 }
 
 .cajaCursos {
+  background-color: #FFEAE8;
   display: grid;
   justify-content: center;
   align-items: none;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .cajaCursos div {
-  background-color: rgba(249, 162, 252, 0.781);
+  background-color: #FAC9DC;
   margin: 15px;
   display: flex;
   flex-direction: column;
@@ -214,11 +222,12 @@
 }
 
 .cajota {
+  background-color: #FFEAE8;
   display: grid;
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 50px;
+  padding: 50px;
 }
 .cajota div {
   padding: 15px;
@@ -239,7 +248,43 @@
   margin: 5px;
 }
 
+.galeria {
+  height: calc(300px + 3em);
+  width: 260px;
+  margin: 1em auto;
+  border: 1px solid #555;
+  position: relative;
+}
+.galeria img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 3s;
+}
+.galeria input[type=radio] {
+  position: relative;
+  bottom: calc(-300px - 1.5em);
+  left: 0.5em;
+}
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+  opacity: 1;
+}
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+  opacity: 1;
+}
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+  opacity: 1;
+}
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+  opacity: 1;
+}
+.galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(4) {
+  opacity: 1;
+}
+
 .error404 {
+  background-color: #FFEAE8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,6 +294,96 @@
 .error404 p {
   font-size: 45px;
   font-family: "Nunito", sans-serif;
+}
+
+@media (max-width: 768px) {
+  /*Tablet header*/
+  .header {
+    background-color: #FAC9DC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .icono1 {
+    margin: 10px;
+  }
+  .header .titulo1 {
+    font-size: 56px;
+    padding-left: 15px;
+    align-self: center;
+    justify-self: center;
+  }
+  .header .slogan {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .header .navBar {
+    align-self: end;
+    margin: 10px;
+  }
+  /*Tablet footer*/
+  .piedepagina {
+    background-color: #a7ada8;
+  }
+  /* Tablet Index*/
+  .main-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-index .pprincipal {
+    background-color: #E095C3;
+    padding: 10px;
+    width: 90%;
+    font-size: 15px;
+  }
+  .main-index .box1Ind {
+    margin: 0px;
+  }
+  .main-index .box11Ind {
+    padding: 0px;
+  }
+  /*Tablet productos*/
+  .cajota {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  /*Tablet Cursos*/
+  .cajaCursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .cajaCursos div h1 {
+    font-size: 20px;
+  }
+  .cajaCursos div li {
+    font-size: 12px;
+  }
+  /*Tablet Contacto*/
+  .main-contactos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+    flex-wrap: wrap-reverse;
+  }
+  .main-contactos div {
+    margin: 0px;
+    padding: 15px;
+  }
+  .main-contactos div h2 {
+    padding-left: 40px;
+  }
+  /*Tablet Galeria*/
 }
 
 /*# sourceMappingURL=style.css.map */

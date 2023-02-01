@@ -1,11 +1,19 @@
 .main-contactos{
+    background-color: $bg-main;
     @include grid (center, center, 1fr 1fr);
     div{
         margin: 20px;
         font-family: $font-general;
         font-size: 15px;
+                h2{
+            font-family: $font-txt;
+            font-size: 25px;
+            font-weight: 400;
+            padding-left: 60px;
+        }
         p{
             padding: 10px;
         }
+
     }
 }

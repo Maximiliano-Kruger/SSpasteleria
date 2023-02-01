@@ -1,4 +1,5 @@
 .error404{
+    background-color: $bg-main;
     @include flex (column, center, center);
     padding: 25px;
     p{

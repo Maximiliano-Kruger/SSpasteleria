@@ -1,0 +1,87 @@
+@media (max-width: 768px){
+
+/*Tablet header*/
+
+    .header{
+        background-color: $bg-head-tablet;
+        @include flex (column, center, center);
+        .icono1{
+            margin: 10px;
+        }
+        .titulo1{
+            font-size: 56px;
+            padding-left: 15px;
+            align-self: center;
+            justify-self: center;
+        }
+        .slogan{
+            font-size: 20px;
+            padding: 5px;
+        }
+        .navBar{
+            align-self: end;
+            margin: 10px;
+        }
+    }
+
+/*Tablet footer*/
+
+.piedepagina{
+    background-color: #a7ada8;
+}
+/* Tablet Index*/
+
+    .main-index{
+    
+    @include flex (column, center, center);
+    .pprincipal{
+        background-color: $bg-header;
+        padding: 10px;
+        width: 90%;
+        font-size: 15px;
+    }
+    .box1Ind{
+        margin: 0px;
+    }
+    .box11Ind{
+        padding: 0px;
+    }
+    }
+
+/*Tablet productos*/
+.cajota{
+    @include flex (row, center,space-between );
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+/*Tablet Cursos*/
+.cajaCursos{
+    @include flex (row, space-between, center);
+    flex-wrap: wrap;
+    div{
+        h1{
+            font-size: 20px;
+        }
+        li{
+            font-size: 12px;
+        }
+    }
+}
+
+
+/*Tablet Contacto*/
+.main-contactos{
+    @include flex (row, center, space-between);
+    flex-wrap: wrap-reverse ;
+    div{
+        margin: 0px;
+        padding: 15px;
+        h2{
+            padding-left: 40px;
+        }
+    }
+}
+
+/*Tablet Galeria*/
+}
