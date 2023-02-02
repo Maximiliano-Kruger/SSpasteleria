@@ -1,2 +1,74 @@
 @media (max-width: 320px){
+
+/*Mobile header*/
+
+.header{
+    background-color: $bg-head-phone;
+    @include flex (column, center, center);
+    padding: 5px;
+    .icono1{
+        margin: 5px;
+        height: 100px;
+        width: 100px;
+        a{
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .titulo1{
+        font-size: 24px;
+        padding-left: 10px;
+        align-self: center;
+        justify-self: center;
+    }
+    .slogan{
+        font-size: 15px;
+        padding: 5px;
+        font-family:$font-general ;
+    }
+    .navBar{
+        align-self: end;
+        margin: 0px;
+        ul{
+            li{
+                font-size: 8px;
+            }
+        }
+    }
+}
+/*Mobile footer*/
+
+.piedepagina{
+    background-color: #b4b8b5;
+}
+.seguinos{
+    font-size: 15px;
+}
+
+/* Mobile Index*/
+
+    .main-index{
+    
+    @include flex (column, center, center);
+    .pprincipal{
+        font-size: 10px;
+    }
+    .box1Ind{
+        margin: 0px;
+    }
+    .box11Ind{
+        padding: 0px;
+    }
+    }
+
+/*Mobile productos*/
+.cajota{
+    @include flex (row, center,space-between );
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
 }
