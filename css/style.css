@@ -161,7 +161,7 @@
   grid-template-columns: 1fr 1fr 1fr; }
   .cajaCursos div {
     background-color: #FAC9DC;
-    margin: 15px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -353,4 +353,37 @@
     justify-content: center;
     align-items: space-between;
     flex-wrap: wrap;
-    padding: 30px; } }
+    padding: 20px; }
+  /*Mobile Cursos*/
+  .cajaCursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 15px; }
+    .cajaCursos div h1 {
+      font-size: 20px;
+      padding: 7px; }
+    .cajaCursos div li {
+      font-size: 12px;
+      padding: 7px; }
+  /*Tablet Contacto*/
+  .main-contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 7px; }
+    .main-contactos div {
+      margin: 0px;
+      padding: 5px;
+      object-fit: cover; }
+      .main-contactos div h2 {
+        padding-left: 10px; }
+      .main-contactos div p {
+        padding-left: 5px; }
+        .main-contactos div p textarea {
+          object-fit: cover;
+          width: 85%; } }

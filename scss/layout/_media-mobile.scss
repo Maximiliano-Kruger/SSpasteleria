@@ -68,7 +68,46 @@
 .cajota{
     @include flex (row, center,space-between );
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 20px;
+}
+
+/*Mobile Cursos*/
+.cajaCursos{
+    @include flex (row, space-between, center);
+    flex-wrap: wrap;
+    padding: 5px 15px;
+    div{
+        h1{
+            font-size: 20px;
+            padding: 7px;
+        }
+        li{
+            font-size: 12px;
+            padding: 7px;
+        }
+    }
+}
+
+/*Tablet Contacto*/
+.main-contactos{
+    @include flex (column, center, center);
+    flex-wrap: wrap ;
+    padding: 7px;
+    div{
+        margin: 0px;
+        padding: 5px;
+        object-fit: cover;
+        h2{
+            padding-left: 10px;
+        }
+        p{
+            padding-left: 5px;
+            textarea{
+                object-fit: cover;
+                width: 85%;
+            }
+        }
+    }
 }
 
 }
